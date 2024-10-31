@@ -32,12 +32,12 @@ const taskReducer = (state = initialValue, action) => {
 
 // create action creator 
 
-const addTask =(data)=>{
+export const addTask =(data)=>{
     return {type:ADD_TASK,payload:data}
 }
 
 
-const delTask =(id)=>{
+export const delTask =(id)=>{
     return {type:DEL_TASK,payload:id}
 }
 
@@ -51,19 +51,19 @@ console.log("initial state", store.getState())
 
 
 
-store.dispatch(addTask("Mango"))
-console.log("updated",store.getState())
+// store.dispatch(addTask("Mango"))
+// console.log("updated",store.getState())
 
 
-store.dispatch(addTask("bananan"))
-console.log("updated",store.getState())
+// store.dispatch(addTask("bananan"))
+// console.log("updated",store.getState())
 
 
-store.dispatch(addTask("sourav"))
-console.log("updated",store.getState())
+// store.dispatch(addTask("sourav"))
+// console.log("updated",store.getState())
 
 
 
 
-store.dispatch(delTask(1))
-console.log("deleted",store.getState())
+// store.dispatch(delTask(1))
+// console.log("deleted",store.getState())
