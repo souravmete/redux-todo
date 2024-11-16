@@ -5,6 +5,9 @@ import { MdDeleteForever } from "react-icons/md";
 import { useSelector,useDispatch } from "react-redux";
 import { addTask, delTask } from "../Store";
 
+
+
+
 export const Todo = () => {
 
   const dispatch =useDispatch()
@@ -22,8 +25,13 @@ export const Todo = () => {
   const handelTaskDelete=(id)=>{
     return dispatch(delTask(id))
   }
+
+
+
   const tasks=useSelector ((state)=>state.task);
   console.log(tasks);
+
+
   return (
     <>
       <div className="containers">
